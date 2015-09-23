@@ -1,4 +1,4 @@
-#! /usr/bin/env /usr/bin/awk
+#! /usr/bin/awk -f
 
 BEGIN{
     for(i=1; i<=10; i++) 

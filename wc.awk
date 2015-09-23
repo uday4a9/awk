@@ -1,5 +1,7 @@
 #! /usr/bin/env /usr/bin/awk
 
+# This program simultes the wc command in linux
+
 BEGIN{
     now = 0
     noc = 0
