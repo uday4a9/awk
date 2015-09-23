@@ -9,5 +9,5 @@ BEGIN{
 }
 
 END{
-print "Sum :", sum
+    print "Sum :", sum
 }
