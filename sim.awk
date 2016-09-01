@@ -6,14 +6,17 @@
 # ouput formatting program
 
 BEGIN {
-
+#    print("===================")
+#    print("TOTAL arguments : ", ARGC)
+#    printvector(ARGV)
+#    print("===================")
 }
 
 function printvector(vec) {
-    printf("Contents : ")
+    printf("Contents : \n")
     for(i in vec)
         printf(i "=>" vec[i]"<=>\n")
-    print("")
+    #print("")
 }
 
 {
@@ -35,7 +38,7 @@ function printvector(vec) {
             a[b[i]] = $2","$1
         }
     }
-    printvector(a)
+    #printvector(a)
     #    for(i in b)
     #        print(b[i], " ")
 
