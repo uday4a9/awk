@@ -53,8 +53,18 @@ END {
     #for(i=0; i<NR; i++)
     for(i in a) {
         print(i":")
-        split(a[i],b,";")
-        for(j in b)
-            print("\t"b[j])
+        split(a[i], b, ";")
+        for(j in b) {
+            #print("\t"b[j])
+            split(b[j], splitb, ",")
+            res[splitb[2]] = b[j]
+        }
+        #printvector(res)
+        n = asorti(res, sortres)
+        #printvector(sortres)
+        for(ii=1; ii<=n; ii++)
+            print(ii"\t"res[sortres[ii]])
+        delete res 
+        delete sortres 
     }
 }
