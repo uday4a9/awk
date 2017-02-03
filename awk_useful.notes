@@ -1,3 +1,4 @@
 
 1)  Ex:   ps aux | awk '$1 ~ /root/ && $NF ~ /\[k/{print $0}' | less
     Above command is to combine multiple pattern matches together with && symbol
+    useful notes:- https://www.math.utah.edu/docs/info/gawk_5.html
